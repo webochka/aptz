@@ -1,0 +1,38 @@
+.popup
+	position: fixed
+	top: 50%
+	left: 50%
+	display: inline-block
+	width: 40%
+	min-width: 300px
+	padding-bottom: 20%
+	background: #1c7fff;
+	border-radius: 10px
+	text-align: right
+	visibility: hidden
+	opacity: 0
+	z-index: -100
+	transform: translate(-50%, -200%)
+	
+	&--open
+		visibility: visible
+		opacity: 1
+		z-index: 100
+		transform: translate(-50%, -50%) 
+		transition: transform 0.5s ease
+		
+.popup__close
+	display: inline-block
+	font-size: 50px
+	padding: 2px
+	margin: 0 20px 20px 0
+	cursor: pointer
+	color: #ffff
+
+.popup__title
+	font-family: roboto
+	color: #fff
+	font-size: 40px
+	text-align: center
+
+

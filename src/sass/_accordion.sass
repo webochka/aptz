@@ -1,0 +1,223 @@
+.accordion
+	display: flex
+	background: url('../img/bg/active-bg.png') no-repeat
+	background-size: cover
+	overflow: hidden
+	height: 668px
+
+	+r(700)
+		height: auto
+
+	+r(700)
+		flex-direction: column
+	
+	&__item
+		width: 14%
+		transition: width 0.5s ease-out
+		transform: skew(-10deg)
+		color: #363636
+		padding: 70px 40px 0
+
+		+r(1400)
+			padding: 40px 20px
+
+		+r(1024)
+			transform: none
+
+		+r(700)
+			width: 100%
+			padding: 20px
+
+	&__item--open
+		width: 44%
+		transition: width 1s ease-out
+		background: transparent !important
+
+		+r(400)
+			padding: 0 10px
+
+		.accordion__title
+			visibility: hidden
+			opacity: 0
+			
+		.accordion--open
+			visibility: visible
+			opacity: 1
+			line-height: 28px
+			text-align: left
+			padding: 0 50px
+			transition: opacity 0.4s linear 0.7s
+
+			+r(1024)
+				transform: none
+				padding: 10px 0
+
+			+r(700)
+				height: 350px
+				transition: height 0.5s linear
+
+			+r(650)
+				height: 400px
+
+			+r(400)
+				height: 500px
+
+			//+r(350)
+				//height: 550px
+
+
+	&__item--open.accordion__item1:before,
+	&__item--open.accordion__item5:before
+		display: none 
+
+	&--open
+		visibility: hidden
+		opacity: 0
+		line-height: 0
+		transform: skew(10deg)
+		height: 0
+
+	&__item1
+		position: relative
+		
+		&:before
+			content: ''
+			background: url('../img/bg/1.png') no-repeat
+			background-size: cover
+			width: 200%
+			height: 100%
+			position: absolute
+			top: 0
+			left: -100%	
+
+			+r(700)
+				display: none
+
+		+r(700)
+			background: url('../img/bg/1.png') no-repeat
+			background-size: cover
+
+
+	&__item2
+		background: url('../img/bg/2.png') no-repeat
+		background-size: cover
+
+		
+	&__item3
+		background: url('../img/bg/4.png') no-repeat
+		background-size: cover
+
+	&__item4
+		background: url('../img/bg/3.png') no-repeat
+		background-size: cover
+
+	&__item5
+		position: relative
+
+		&:before
+			content: ''
+			background: url('../img/bg/4.png') no-repeat
+			background-size: cover
+			width: 300%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+
+			+r(700)
+				display: none
+
+		+r(700)
+			background: url('../img/bg/1.png') no-repeat
+			background-size: cover
+
+	&__title
+		font-family: 'Gotham'
+		font-size: 50px
+		color: #808080
+		text-align: center
+		transform: skew(10deg) rotate(-80deg) translate(-450px, 0px)
+		white-space: nowrap
+		visibility: visible
+		opacity: 1
+		transition: opacity 0.5s linear 0.3s
+
+		+r(1024)
+			transform: rotate(-90deg) translate(-500px, 0px)
+
+		+r(700)
+			transform: none
+
+		+r(600)
+			font-size: 30px
+
+		+r(350)
+			white-space: normal
+
+
+	&__title--open
+		font-family: 'Gotham'
+		font-size: 55px
+		padding-bottom: 50px
+		line-height: 53px
+
+		+r(1250)
+			font-size: 40px
+
+		+r(900)
+			font-size: 30px
+			padding-bottom: 20px
+			line-height: 33px
+
+		+r(700)
+			text-align: center
+
+	&__subtitle
+		font-family: 'Roboto', sans-serif
+		font-weight: 700
+		font-size: 16px
+
+
+	&__text
+		font-family: 'Roboto', sans-serif
+		font-weight: 300
+		font-size: 16px
+		font-weight: 300
+		padding: 30px 0
+
+		+r(1100)
+			padding: 10px 0
+		
+
+	&__text-item
+		display: inline-block
+		width: 100%
+
+		&:before
+			content: ''
+			display: inline-block
+			background: #1c7fff
+			width: 7px
+			height: 7px
+			border-radius: 7px
+			margin-right: 10px
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+
+
+ 
+
+

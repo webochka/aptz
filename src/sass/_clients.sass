@@ -1,0 +1,103 @@
+.container
+	max-width: 1215px
+	margin: 0 auto
+
+	+r(1250)
+		padding: 0 20px
+
+.clients
+	position: relative
+	padding: 88px 0 98px
+	color: #363636
+
+	&__inner
+		display: flex
+		justify-content: space-between
+
+		+r(1024)
+			flex-wrap: wrap
+
+	&__review
+		width: 40%
+
+		+r(850)
+			text-align: center
+			width: 100%
+			
+	&__title
+		font-family: "Gotham"
+		font-size: 50px
+
+		+r(420)
+			font-size: 30px
+		
+	&__text
+		font-family: 'Roboto', sans-serif
+		font-weight: 300
+		font-size: 33px
+		padding: 50px 0 44px
+		line-height: 43px
+
+		&--weight
+			font-weight: 500
+
+		+r(420)
+			font-size: 20px
+
+	&__button
+		font-family: "Gotham"
+		background: #1c7fff
+		width: 239px
+		padding: 25px 0 26px
+		text-transform: uppercase
+		font-size: 12px
+		font-weight: 400
+		color: #ffffff
+
+		&:hover
+			background: rgba(#1c7fff, 0.9)
+
+		+r(1024)
+			position: absolute
+			left: 50%
+			transform: translate(-50%)
+			bottom: 14px
+
+	&__icons
+		display: flex
+		align-items: center
+		flex-wrap: wrap 
+		width: 60%
+		justify-content: space-between
+
+		+r(850)
+			width: 100%
+
+		+r(530)
+			flex-wrap: wrap
+			justify-content: space-around
+					
+	&__img
+		width: 33%
+		text-align: center
+
+		+r(1024)
+			filter: grayscale(100%) opacity(50%)
+
+			&:hover
+				filter: none
+
+		+r(850)
+			padding: 30px 0px
+
+		+r(530)
+			width: 35%
+
+		+r(420)
+			width: 60%
+			
+
+
+
+
+
